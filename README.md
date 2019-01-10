@@ -1,4 +1,4 @@
-# Hebron-Dress
+# HebronDress
 ### About:
 our website allows the user to buy or rent dresses  .
 ### User journey:
