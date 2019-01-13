@@ -1,0 +1,25 @@
+{
+  "name": "hebrondress",
+  "version": "1.0.0",
+  "description": "our website allows the user to buy or rent dresses  .",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape ./test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACK1/HebronDress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FACK1/HebronDress/issues"
+  },
+  "homepage": "https://github.com/FACK1/HebronDress#readme",
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "tape": "^4.9.2"
+  }
+}
