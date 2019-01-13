@@ -3,7 +3,8 @@
    Our website allows the user to buy or rent dresses.
 
 ### Naming Confing: 
- - Variables and files: camelCase 
+ - Variables and files: camelCase
+ - Eslint: airbnb-base
 
 ### Users journeys: 
 
