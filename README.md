@@ -1,7 +1,9 @@
-# HebronDress
+# Hebron Dress
 ### About:
-our website allows the user to buy or rent dresses  .
+   Our website allows the user to buy or rent dresses.
 
+# Naming Confing: 
+ - Variables and files: camelCase 
 
 
 # Team Member:
