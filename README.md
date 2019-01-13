@@ -28,18 +28,6 @@
  > I can add the dresses
 
 
-
-
-
-# Team Member:
-- [Shaima' Azmi](https://github.com/shaima96)
-- [Safa Amro](https://github.com/safaaamro)
-- [Razan Tayyem](https://github.com/RazanTayyem)
-- [Amin Talahma](https://github.com/AminTalahma)
-
-
-
-
 # Team Member:
 - [Shaima' Azmi](https://github.com/shaima96)
 - [Safa Amro](https://github.com/safaaamro)
