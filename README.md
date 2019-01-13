@@ -5,6 +5,7 @@
 ### Naming Confing: 
  - Variables and files: camelCase
  - Eslint: airbnb-base
+ - Async: Promises 
 
 ### Users journeys: 
 
