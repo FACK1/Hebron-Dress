@@ -1,0 +1,76 @@
+
+$deeppink:#ECDBCD;
+$fontfamily:OpenSans;
+
+.header{
+  .header-logo{
+    background: $deeppink;
+    display: flex;
+    flex-direction: row;
+
+  }
+  #image{
+    color: $deeppink;
+    width: 30px;
+    height: 40px;
+     }
+  #h3{
+    font-family: 'Great Vibes', cursive;
+    font-size: 24pt;
+    color:#774D47;
+    margin-left: 3px;
+    margin-top: 10px;
+    font-style: normal;
+  }
+  #btnlog{
+    font-size: 12pt;
+    background-color:#774D47;
+    color:$deeppink;
+    border-radius: 20px;
+    width:60px;
+    height:30px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left:120px;
+    margin-top: 7px;
+  }
+  .nav-bar{
+    background: white;
+    border-style: double;
+    height: 45px;
+    border-style: solid;
+    border-color: red;
+
+
+    ul{
+      width: 100%;
+      list-style-type: none;
+      font-size: 15pt;
+      margin-top: 4px;
+
+    }
+    li{
+      float: left;
+      padding: 8px;
+      list-style-type: none;
+
+
+    }
+    a{
+        color:#774D47;
+        text-decoration: none;
+        padding:2px;
+        display: block;
+        text-align: center;
+    }
+  }
+}
+
+.image-slider{
+  width:370px;
+  height: 100px;
+  display: block;
+
+}
+body{
+
+}
