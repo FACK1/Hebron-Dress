@@ -30,7 +30,11 @@
  > I can add the dresses
  
  
- # Website Link:[HebronDress]()
+# Website Link:[HebronDress]()
+
+# Database Schema
+
+![db_schema](https://user-images.githubusercontent.com/26909309/51103183-7e48d800-17ea-11e9-9403-26ee6b60b93f.jpg)
 
 
 # Files Structure:
