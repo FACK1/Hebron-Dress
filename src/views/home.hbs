@@ -1,24 +1,62 @@
 {{>header}}
 <div class="image-slider">
-  <img src="img/a.jpg" alt="imageslider" width="100%">
+   <img src="img/a.jpg" alt="imageslider" width="101.5%" height="300%">
 </div>
-<div class="div">
-  <div class="div1">
-  </div>
-  <!-- <div class="div2">
-    <img src="img/1.jpg" alt="image1">
-    <img src="img/2.jpg" alt="image2">
-    <img src="img/4.jpg" alt="image3">
-    <img src="img/5.jpg" alt="image4">
-    <img src="img/6.jpg" alt="image5">
-    <img src="img/x.jpg" alt="image6">
-  </div>
-  <footer >
-    <p> Hebron 2019 All rights reserved,powered by:Hebron dresses</p>
-  </footer> -->
-
-
-
-
-
+<div class="div-img">
+   <div class="div1">
+      <form action="/search" method="get">
+         <select id="color"name="color" >
+            <option  hidden value="color" id="color-option">Color</option>
+            <option value="red" id="Red">Red</option>
+            <option value="yellow" id="Yellow">Yellow</option>
+            <option value="green" id="Green">Green</option>
+            <option value="blue"id="Blue">Blue</option>
+            <option value="black"id="Black">Black</option>
+            <option value="white"id="White">White</option>
+         </select>
+         <select id="size"name="size">
+            <option  hidden value="size" id="size-option">Size</option>
+            <option value="small" id="Small">Small</option>
+            <option value="medium" id="Medium">Medium</option>
+            <option value="large" id="Large">Large</option>
+            <option value="xlarge"id="XLarge">XLarge</option>
+         </select>
+         <select id="status" name="status">
+            <option  hidden value="status" id="status-option">status</option>
+            <option value="rent" id="Rent">Rent</option>
+            <option value="buy" id="Buy">Buy</option>
+            <option value="buy" id="Buy">Rent&Buy</option>
+         </select>
+         <select id="category" name="category">
+            <option  hidden value="category" id="category-option">category</option>
+            <option value="bride" id="Bride">Bride</option>
+            <option value="party" id="Party">Party</option>
+            <option value="folklore" id="Folklore">Folklore</option>
+         </select>
+         <select id="price" name="price">
+            <option  hidden value="price" id="price-option">price</option>
+            <option value="0-100" id="price1">0-100$</option>
+            <option value="100-400" id="price2">100-400$</option>
+            <option value="400-800" id="price3">400-800$</option>
+            <option value="800-1000" id="price4">800-1000$</option>
+            <option value=">1000" id="price5"> >1000$</option>
+         </select>
+         <button id="search"> search</button>
+      </form>
+   </div>
+   <div class="div2">
+      <div id="div21" >
+         <img  src="img/1.jpg" alt="image1" class="imge">
+         <img src="img/2.jpg" alt="image2" class="imge">
+         <img src="img/4.jpg" alt="image3" class="imge">
+      </div>
+      <div id="div22">
+         <img src="img/5.jpg" alt="image4" class="imge">
+         <img src="img/6.jpg" alt="image5"class="imge">
+         <img src="img/x.jpg" alt="image6"class="imge">
+      </div>
+      <div class="footer">
+         <p id="paragraph"> <b> Hebron 2019 All rights reserved,powered by:Hebron dresses</b></p>
+      </div>
+   </div>
 </div>
