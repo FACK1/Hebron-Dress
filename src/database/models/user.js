@@ -2,7 +2,6 @@ const Sequelize = require('sequelize');
 const sequelize = require('./sequelize.js');
 
 const User = sequelize.define('users', {
-
   id: {
     type: Sequelize.INTEGER,
     allowNull: false,
@@ -16,6 +15,8 @@ const User = sequelize.define('users', {
   email: {
     type: Sequelize.STRING(250),
     allowNull: false,
+    validate: { isEmail: true, },
+    unique: { args: true, msg: 'Email address aleady in use', },
   },
   password: {
     type: Sequelize.STRING(250),
@@ -26,5 +27,4 @@ const User = sequelize.define('users', {
     allowNull: false,
   },
 });
-
-exports.module = User;
+module.exports = User;

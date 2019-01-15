@@ -1,9 +1,8 @@
 const Sequelize = require('sequelize');
 const sequelize = require('./sequelize.js');
 
-const User = require('./user.js');
 
-const Dress = sequelize.define('dresses', {
+const Dress = sequelize.define('dress', {
   id: {
     type: Sequelize.INTEGER,
     allowNull: false,
@@ -42,14 +41,6 @@ const Dress = sequelize.define('dresses', {
     type: Sequelize.INTEGER,
     allowNull: false,
   },
-  user_id: {
-    type: Sequelize.INTEGER,
-    allowNull: false,
-    references: {
-      model: User,
-      key: 'id',
-      deferrable: Sequelize.Deferrable.INITIALLY_IMMEDIATE,
-    },
-  },
+
 });
 module.exports = Dress;
