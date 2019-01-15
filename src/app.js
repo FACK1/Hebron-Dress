@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const exphbs = require('express-handlebars');
+const router = require('./controllers');
 
 // const availableDresses = require('./database/queries/getDresses.js');
 
@@ -11,6 +12,9 @@ const app = express();
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+app.use(express.urlencoded({ extended: false, }));
+app.use(express.static(path.join(__dirname, '..', 'public')));
+
 
 app.engine(
   'hbs', exphbs({
@@ -20,8 +24,6 @@ app.engine(
     defaultLayout: 'main',
   })
 );
-
-
 app.get('/search', (req, res) => {
   const { color, } = req.query;
   let selected = color;
@@ -37,5 +39,5 @@ app.get('/search', (req, res) => {
     res.send(error);
   });
 });
-
+app.use(router);
 module.exports = app;
