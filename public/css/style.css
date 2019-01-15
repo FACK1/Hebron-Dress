@@ -1,0 +1,328 @@
+.header {
+  width: 100%;
+}
+.header .header-logo {
+  background: #ECDBCD;
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+}
+.header #image {
+  color: #ECDBCD;
+  width: 40px;
+  height: 50px;
+  margin-top: 6px;
+}
+.header #h3 {
+  font-family: "Great Vibes", cursive;
+  font-size: 26pt;
+  color: #774D47;
+  margin-left: 3px;
+  margin-top: 20px;
+  font-style: normal;
+}
+.header #btnlog {
+  font-size: 12pt;
+  background-color: #774D47;
+  color: #ECDBCD;
+  border-radius: 20px;
+  width: 60px;
+  height: 30px;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 98px;
+  margin-top: 18px;
+}
+.header .nav-bar {
+  background: white;
+  border-style: double;
+  height: 45px;
+  border: solid;
+  border-color: #774D47;
+}
+.header .nav-bar ul {
+  width: 100%;
+  list-style-type: none;
+  font-size: 15pt;
+  margin-top: 4px;
+}
+.header .nav-bar li {
+  float: left;
+  padding: 8px;
+  list-style-type: none;
+}
+.header .nav-bar a {
+  color: #774D47;
+  text-decoration: none;
+  padding: 2px;
+  display: block;
+  text-align: center;
+}
+
+.image-slider {
+  width: 370px;
+  height: 100px;
+  display: block;
+}
+
+body {
+  width: 100vw;
+}
+
+.div-img {
+  width: 100%;
+  margin-top: 150px;
+  display: flex;
+}
+.div-img .div1 {
+  width: 40%;
+  height: 170px;
+  margin-top: 50px;
+  border: solid;
+  border-color: #774D47;
+  display: inline-block;
+}
+.div-img .div1 #color {
+  background-color: #774D47;
+  color: #ECDBCD;
+  border: solid;
+  border-color: #774D47;
+  width: 80%;
+  margin-left: 12px;
+  margin-top: 4px;
+}
+.div-img .div1 #color #color-option {
+  width: 40%;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #color #Red {
+  background-color: #ECDBCD;
+  color: #774D47;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #color #Yellow {
+  background-color: #ECDBCD;
+  color: #774D47;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #color #Green {
+  background-color: #ECDBCD;
+  color: #774D47;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #color #Blue {
+  background-color: #ECDBCD;
+  color: #774D47;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #color #Black {
+  background-color: #ECDBCD;
+  color: #774D47;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #color #White {
+  background-color: #ECDBCD;
+  color: #774D47;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #size {
+  background-color: #774D47;
+  color: #ECDBCD;
+  border: solid;
+  border-color: #774D47;
+  width: 80%;
+  margin-left: 12px;
+  margin-top: 4px;
+}
+.div-img .div1 #size #size-option {
+  width: 40%;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #size #Small {
+  background-color: #ECDBCD;
+  color: #774D47;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #size #Medium {
+  background-color: #ECDBCD;
+  color: #774D47;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #size #Large {
+  background-color: #ECDBCD;
+  color: #774D47;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #size #XLarge {
+  background-color: #ECDBCD;
+  color: #774D47;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #status {
+  background-color: #774D47;
+  color: #ECDBCD;
+  border: solid;
+  border-color: #774D47;
+  width: 80%;
+  margin-left: 12px;
+  margin-top: 4px;
+}
+.div-img .div1 #status #status-option {
+  width: 40%;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #status #Rent {
+  background-color: #ECDBCD;
+  color: #774D47;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #status #Buy {
+  background-color: #ECDBCD;
+  color: #774D47;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #category {
+  background-color: #774D47;
+  color: #ECDBCD;
+  border: solid;
+  border-color: #774D47;
+  width: 80%;
+  margin-left: 12px;
+  margin-top: 4px;
+}
+.div-img .div1 #category #category-option {
+  width: 40%;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #category #Bride {
+  background-color: #ECDBCD;
+  color: #774D47;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #category #Party {
+  background-color: #ECDBCD;
+  color: #774D47;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #category #Folklore {
+  background-color: #ECDBCD;
+  color: #774D47;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #price {
+  background-color: #774D47;
+  color: #ECDBCD;
+  border: solid;
+  border-color: #774D47;
+  width: 80%;
+  margin-left: 12px;
+  margin-top: 4px;
+}
+.div-img .div1 #price #price-option {
+  width: 40%;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #price #price1 {
+  background-color: #ECDBCD;
+  color: #774D47;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #price #price2 {
+  background-color: #ECDBCD;
+  color: #774D47;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #price #price3 {
+  background-color: #ECDBCD;
+  color: #774D47;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #price #price4 {
+  background-color: #ECDBCD;
+  color: #774D47;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #price #price5 {
+  background-color: #ECDBCD;
+  color: #774D47;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div1 #search {
+  background-color: #ECDBCD;
+  color: #774D47;
+  border: solid;
+  border-color: #774D47;
+  width: 70%;
+  margin-left: 18px;
+  margin-top: 4px;
+  text-align: center;
+}
+.div-img .div2 {
+  width: 60%;
+  height: 170px;
+  margin-top: 50px;
+  display: inline-block;
+  border: solid;
+  border-color: #774D47;
+}
+.div-img .div2 #div21 {
+  width: 100%;
+  height: 50%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.div-img .div2 #div22 {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 5px;
+}
+.div-img .div2 .footer {
+  border: solid;
+  border-color: #774D47;
+  width: 170%;
+  height: 65px;
+  background: #ECDBCD;
+  display: flex;
+  margin-left: -154px;
+  margin-top: -10px;
+}
+.div-img .div2 .footer #paragraph {
+  font-size: 18px;
+  color: #774D47;
+  text-align: center;
+  margin-top: 2px;
+}
+.div-img .div2 .imge {
+  width: 50px;
+  height: 50px;
+  border: solid;
+  border-color: #774D47;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
