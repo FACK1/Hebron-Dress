@@ -7,5 +7,4 @@ sequelize.sync().then(() => {
     // eslint-disable-next-line no-console
     console.log(`Our app is running on http://localhost:${port}`);
   });
-
 });
