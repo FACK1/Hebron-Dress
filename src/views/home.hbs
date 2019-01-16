@@ -46,14 +46,20 @@
    </div>
    <div class="div2">
       <div id="div21" >
-         <img  src="img/1.jpg" alt="image1" class="imge">
-         <img src="img/2.jpg" alt="image2" class="imge">
-         <img src="img/4.jpg" alt="image3" class="imge">
+
+        {{#each dresses1}}
+
+    <a href={{getLink id}}><img src= {{img}} class="imge">
+      </img>
+        {{/each}}
       </div>
       <div id="div22">
-         <img src="img/5.jpg" alt="image4" class="imge">
-         <img src="img/6.jpg" alt="image5"class="imge">
-         <img src="img/x.jpg" alt="image6"class="imge">
+        {{#each dresses2}}
+
+    <a href={{getLink id}}><img src= {{img}} class="imge"></a>
+      </img>
+        {{/each}}
+
       </div>
       <div class="footer">
          <p id="paragraph"> <b> Hebron 2019 All rights reserved,powered by:Hebron dresses</b></p>

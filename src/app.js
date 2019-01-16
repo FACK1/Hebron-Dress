@@ -2,6 +2,8 @@ const express = require('express');
 const path = require('path');
 const exphbs = require('express-handlebars');
 const router = require('./controllers');
+const helpers = require('./views/helpers/helpers.js');
+
 
 // const availableDresses = require('./database/queries/getDresses.js');
 
@@ -22,6 +24,7 @@ app.engine(
     layoutsDir: path.join(__dirname, 'views', 'layouts'),
     partialsDir: path.join(__dirname, 'views', 'partials'),
     defaultLayout: 'main',
+    helpers,
   })
 );
 app.get('/search', (req, res) => {
