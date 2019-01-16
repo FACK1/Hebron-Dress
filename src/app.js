@@ -1,10 +1,14 @@
-
 const express = require('express');
 const path = require('path');
 const exphbs = require('express-handlebars');
 const router = require('./controllers');
 
+// const availableDresses = require('./database/queries/getDresses.js');
+
+const { Dress, } = require('./database/models/');
+
 const app = express();
+
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -20,5 +24,20 @@ app.engine(
     defaultLayout: 'main',
   })
 );
+app.get('/search', (req, res) => {
+  const { color, } = req.query;
+  let selected = color;
+  if (color === 'color') {
+    selected = { $like: '%%', };
+  } Dress.findAll(
+    {
+      where: { color: selected, },
+    }
+  ).then((dresses) => {
+    res.send(dresses);
+  }).catch((error) => {
+    res.send(error);
+  });
+});
 app.use(router);
 module.exports = app;
