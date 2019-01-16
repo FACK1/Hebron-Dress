@@ -42,5 +42,7 @@ const Dress = sequelize.define('dress', {
     allowNull: false,
   },
 
+}, {
+  freezeTableName: true,
 });
 module.exports = Dress;
