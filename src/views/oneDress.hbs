@@ -1,0 +1,38 @@
+{{>header}}
+<section>
+  <div class="dress">
+    <h2 class="h2"><b>All Details<b></h2>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-med-5">
+{{#each dresses}}
+        <a href="{{getLink id}}">
+        <img src={{img}} alt="{{name}}" style="width:100%">
+      </div>
+        </a>
+{{/each}}
+      <div class="col-med-7">
+{{#each dresses}}
+        <div class="row1">
+          <p> Color:{{color}} </p>
+          <p> Size: {{size}}</p>
+          <p> Price:{{price}}</p>
+        </div>
+{{#each}}
+        <div class="row2">
+          <img src="profile.svg" alt="profile">
+          <p>{{name}}</p>
+          <img src="location.svg" alt="location">
+          <img src="contact.svg" alt="contact">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
