@@ -1,0 +1,139 @@
+
+$deeppink:#ECDBCD;
+$fontfamily:OpenSans;
+$deep:#774D47;
+
+.header{
+  width: 100%;
+  .header-logo{
+    background: $deeppink;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+
+  }
+  #image{
+    color: $deeppink;
+    width: 40px;
+    height: 50px;
+    margin-top: 6px;
+     }
+  #h3{
+    font-family: 'Great Vibes', cursive;
+    font-size: 26pt;
+    color:$deep;
+    margin-left: 3px;
+    margin-top: 20px;
+    font-style: normal;
+  }
+  #btnlog{
+    font-size: 12pt;
+    background-color:$deep;
+    color:$deeppink;
+    border-radius: 20px;
+    width:60px;
+    height:30px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left:98px;
+    margin-top: 18px;
+    text-align: center;
+  }
+  .nav-bar{
+    background: white;
+    border-style: double;
+    height: 45px;
+    border: solid;
+    border-color: $deep;
+
+
+    ul{
+      width: 100%;
+      list-style-type: none;
+      font-size: 15pt;
+      margin-top: 4px;
+
+    }
+    li{
+      float: left;
+      padding: 12px;
+      list-style-type: none;
+
+
+    }
+    a{
+        color:$deep;
+        text-decoration: none;
+        padding:2px;
+        display: block;
+        text-align: center;
+    }
+  }
+}
+.dresses{
+
+  .h2{
+
+    font-size: 26pt;
+    color:$deep;
+    margin-top:20px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 2rem;
+}
+}
+.div-father{
+  display: flex;
+width: 90%;
+height:auto;
+margin-left: 5%;
+border-style: double;
+border: solid;
+border-color: $deep;
+
+
+.div-child1{
+  display: block;
+  flex-direction: column;
+
+width: 100%;
+height:2rem;
+border-style: double;
+border: solid;
+border-color: gray;
+margin-top: 11px;
+margin-left: 7px;
+
+.div-child10{
+  display: block;
+  flex-direction: column;
+width: 60%;
+.imge{
+  display: block;
+  flex-direction: column;
+height: 3rem;
+width:10%;
+
+}
+}
+.div-child10{
+  display: block;
+  flex-direction: column;
+
+}
+
+
+}
+.div-child2{
+  display: block;
+  flex-direction: column;
+
+width: 44%;
+height:13rem;
+border-style: double;
+border: solid;
+border-color: white;
+margin-top: 11px;
+margin-left: 7px;
+
+}
+
+}

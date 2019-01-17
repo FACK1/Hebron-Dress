@@ -1,0 +1,24 @@
+{{>header}}
+<div class="dresses">
+   <h2 class="h2"><b>Dresses<b></h2>
+</div>
+
+<div class="div-father">
+  {{#each dresses}}
+  <div class="div-child1">
+    <divclass="div-child10">
+   <a href={{getLink id}}>
+<img src= {{img}} class="imge">
+        </img>
+      </div>
+      <divclass="div-child11"></div>
+      </div>
+{{/each}}
+
+<!---------------------------------------------------------------------->
+  {{#each dresses}}
+  <div class="div-child2">
+<p >{{category}}</p>
+</div>
+{{/each}}
+</div>

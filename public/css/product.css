@@ -1,0 +1,117 @@
+.header {
+  width: 100%;
+}
+.header .header-logo {
+  background: #ECDBCD;
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+}
+.header #image {
+  color: #ECDBCD;
+  width: 40px;
+  height: 50px;
+  margin-top: 6px;
+}
+.header #h3 {
+  font-family: "Great Vibes", cursive;
+  font-size: 26pt;
+  color: #774D47;
+  margin-left: 3px;
+  margin-top: 20px;
+  font-style: normal;
+}
+.header #btnlog {
+  font-size: 12pt;
+  background-color: #774D47;
+  color: #ECDBCD;
+  border-radius: 20px;
+  width: 60px;
+  height: 30px;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 98px;
+  margin-top: 18px;
+  text-align: center;
+}
+.header .nav-bar {
+  background: white;
+  border-style: double;
+  height: 45px;
+  border: solid;
+  border-color: #774D47;
+}
+.header .nav-bar ul {
+  width: 100%;
+  list-style-type: none;
+  font-size: 15pt;
+  margin-top: 4px;
+}
+.header .nav-bar li {
+  float: left;
+  padding: 12px;
+  list-style-type: none;
+}
+.header .nav-bar a {
+  color: #774D47;
+  text-decoration: none;
+  padding: 2px;
+  display: block;
+  text-align: center;
+}
+
+.dresses .h2 {
+  font-size: 26pt;
+  color: #774D47;
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 2rem;
+}
+
+.div-father {
+  display: flex;
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+  border-style: double;
+  border: solid;
+  border-color: #774D47;
+}
+.div-father .div-child1 {
+  display: block;
+  flex-direction: column;
+  width: 100%;
+  height: 2rem;
+  border-style: double;
+  border: solid;
+  border-color: gray;
+  margin-top: 11px;
+  margin-left: 7px;
+}
+.div-father .div-child1 .div-child10 {
+  display: block;
+  flex-direction: column;
+  width: 60%;
+}
+.div-father .div-child1 .div-child10 .imge {
+  display: block;
+  flex-direction: column;
+  height: 3rem;
+  width: 10%;
+}
+.div-father .div-child1 .div-child10 {
+  display: block;
+  flex-direction: column;
+}
+.div-father .div-child2 {
+  display: block;
+  flex-direction: column;
+  width: 44%;
+  height: 13rem;
+  border-style: double;
+  border: solid;
+  border-color: white;
+  margin-top: 11px;
+  margin-left: 7px;
+}
+
+/*# sourceMappingURL=product.css.map */
