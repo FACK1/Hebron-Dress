@@ -7,7 +7,7 @@ const oneDress = require('./oneDress');
 const router = express.Router();
 
 router.get('/', home.get);
-router.get('/dresses/:id', oneDress.get);
+router.get('/oneDress/:id', oneDress.get);
 
 
 router.use(error.pageNotFound);
