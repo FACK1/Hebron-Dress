@@ -1,31 +1,4 @@
-<!-- {{>header}}
-<div class="dresses">
-   <h2 class="h2"><b>Dresses<b></h2>
-</div>
 
-<div class="div-father">
-  {{#each dresses}}
-  <div class="div-child1">
-<div class="div-child10">
-   <a href={{getLink id}}>
-<img src= {{img}} class="imge">
-        </img>
-        <!- <h6 class="parg">color:{{color}}</h6><br>
-        <h6 class="parg">Size:{{size}}</h6>
-        <p class="parg">color:{{color}}</p>
-        <p class="parg">Address:{{Address}}</p>
-        <p class="parg">Address:{{Mobile}}</p> -->
-<!-- </div>
-      </div>
-{{/each}} -->
-
-<!---------------------------------------------------------------------->
-  <!-- {{#each dresses}} -->
-  <!-- <div class="div-child2">
-<p >{{category}}</p>
-</div> -->
-<!-- {{/each}} -->
-<!-- </div> -->
 {{>header}}
 <div class="dresses">
    <h2 class="h2"><b>Dresses<b></h2>
@@ -41,19 +14,17 @@
 </div>
 <div class="child11">
  <h6 class="parg">color:{{color}}</h6><br>
-<h6 class="parg">Size:{{size}}</h6>
-<p class="parg">color:{{color}}</p>
-<p class="parg">Address:{{Address}}</p>
-<p class="parg">Address:{{Mobile}}</p>
+<h6 class="parg">Size:{{size}}</h6><br>
+<p class="parg">category:{{category}}</p><br>
+<p class="parg">price:
+  <span style="color: #ff0000">{{price}}$</span></p><br>
+{{#if for_rent}}
+<p class="parg">Available: For Rent</p><br>
+{{/if}}
 </div>
 
       </div>
 {{/each}}
 
-<!---------------------------------------------------------------------->
-  <!-- {{#each dresses}} -->
-  <!-- <div class="div-child2">
-<p >{{category}}</p>
-</div> -->
-<!-- {{/each}} -->
+
 </div>
