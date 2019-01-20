@@ -28,13 +28,33 @@ app.engine(
   })
 );
 app.get('/search', (req, res) => {
-  const { color, } = req.query;
+// search query
+  const { color, size, status, } = req.query;
   let selected = color;
+  let sizeSel = size;
+  let for_rent; let for_sale;
   if (color === 'color') {
     selected = { $like: '%%', };
-  } Dress.findAll(
+  } if (size === 'size') {
+    sizeSel = { $like: '%%', };
+  }
+  if (status === 'rent') {
+    for_rent = true;
+    for_sale = false;
+  }
+  if (status === 'sale') {
+    for_rent = false;
+    for_sale = true;
+  }
+  if (status === 'both' || status === 'status') {
+    for_rent = true;
+    for_sale = true;
+  }
+  Dress.findAll(
     {
-      where: { color: selected, },
+      where: {
+        color: selected, size: sizeSel, for_rent, for_sale,
+      },
     }
   ).then((dresses) => {
     res.send(dresses);
