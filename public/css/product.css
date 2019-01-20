@@ -198,9 +198,13 @@
   border: solid;
   border-color: #774d47;
   margin-top: 11px;
+  color: black;
 }
 .div-father .div-child1 .div-child10 {
   display: flex;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+
 }
 .div-father .div-child1 .div-child10 .imge {
   flex-direction: column;
@@ -213,6 +217,7 @@
   margin-top: 17px;
   margin-left: 30px;
   margin-bottom: 8px;
+    color: black;
 }
 .div-father .div-child1 .child11 {
   flex-direction: column;
@@ -222,4 +227,5 @@
   margin-top: 25px;
   margin-left: 30px;
   margin-bottom: 8px;
+    color: black;
 }
