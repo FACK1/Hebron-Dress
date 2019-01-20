@@ -5,7 +5,7 @@ exports.get = (req, res, next) => {
     .then((dresses) => {
       const dresses1 = dresses.slice(0, 3);
       const dresses2 = dresses.slice(3, 6);
-      res.render('home', { dresses1, dresses2, });
+      res.render('home', { dresses1, dresses2, css: 'style', });
     })
     .catch((err) => {
       next(err);
