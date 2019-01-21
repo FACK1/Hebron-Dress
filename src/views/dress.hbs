@@ -1,0 +1,71 @@
+{{>header}}
+
+  <div class="dresses">
+     <h2 class="h2"><b>all details<b></h2>
+  </div>
+
+
+ <div class="div-father">
+  {{#each dresses}}
+  <div class="div-child1">
+<div class="div-child10">
+   <a href={{getLink id}}>
+<img src= {{img}} class="imge">
+        </img>
+</div>
+<div class="child11">
+ <h6 class="parg">color:{{color}}</h6><br>
+<h6 class="parg">Size:{{size}}</h6><br>
+<p class="parg">category:{{category}}</p><br>
+<p class="parg">price:
+  <span style="color: #ff0000">{{price}}$</span></p><br>
+{{#if for_rent}}
+<p class="parg">Available: For Rent</p><br>
+{{/if}}
+
+<img src="/img/Vector (2).png" alt="profile" class="imges"><br>
+<p>{{name}}</p>
+<img src="/img/Rectangle 12.png" alt="location" class="imges"><br>
+<p>{{email}}</p>
+<img src="/img/Frame.png" alt="contact" class="imges"><br>
+{{mobile}}</p>
+</div>
+
+      </div>
+{{/each}}
+
+
+</div>
+<!-- <section>
+  <div class="container">
+    <div class="row">
+      <div class="col-med-5">
+{{#each dresses}}
+        <a href=" {{getLink id}}">
+        <img src={{img}} alt="{{name}}" style="width:50%">
+      </div>
+{{/each}}
+      <div class="col-med-7">
+{{#each dresses}}
+        <div class="row1">
+          <p> Color:{{color}} </p>
+          <p> Size: {{size}}</p>
+          <p> Price:{{price}}</p>
+        </div>
+{{/each}}
+        <div class="row2">
+          <img src="profile.svg" alt="profile">
+          <p>{{name}}</p>
+          <img src="location.svg" alt="location">
+          <p>{{mobile}}</p>
+          <img src="contact.svg" alt="contact">
+          p{{mobile}}
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section> -->
