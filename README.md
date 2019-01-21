@@ -46,7 +46,7 @@
       - product.css
       - oneDress.css
       - reset.css
-  -img
+ -img
     
   - src 
     - server.js
