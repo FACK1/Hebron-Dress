@@ -11,7 +11,7 @@ exports.get = (req, res, next) => {
   } = req.query;
   let query = {};
   let priceSel = price;
-
+  console.log(status);
 
   const selected = color === 'color' ? { $like: '%%', } : color;
   const sizeSel = size === 'size' ? { $like: '%%', } : size;
@@ -27,25 +27,17 @@ exports.get = (req, res, next) => {
     priceSel = { [Op.gte]: 1000, };
   }
 
-  if (status === 'rent') {
+  if (status === 'Rent') {
     query = {
       color: selected, size: sizeSel, for_rent: true, for_sale: false, available: true, category: categorySel, price: priceSel,
     };
-  } else if (status === 'sale') {
+  } else if (status === 'Sale') {
     query = {
       color: selected, size: sizeSel, for_rent: false, for_sale: true, available: false, category: categorySel, price: priceSel,
     };
-  } else if (status === 'both') {
-    query = {
-      color: selected, size: sizeSel, for_rent: true, for_sale: true, available: true, category: categorySel, price: priceSel,
-    };
-  } else if (status === 'status') {
+  } else if (status === 'status' || status === 'Both') {
     query = {
       color: selected, size: sizeSel, category: categorySel, price: priceSel,
-    };
-  } else {
-    query = {
-      color: selected, size: sizeSel, for_rent, for_sale, available, category: categorySel, priceSel: price,
     };
   }
   Dress.findAll({ where: query, }).then((dresses) => {
