@@ -11,8 +11,6 @@ exports.get = (req, res, next) => {
   } = req.query;
   let selected = color;
   let sizeSel = size;
-  let for_rent; let for_sale;
-  let available;
   let categorySel = category;
   let priceSel = price;
   let query = {};
@@ -33,17 +31,17 @@ exports.get = (req, res, next) => {
   }
 
   if (status === 'rent') {
-    for_rent = true;
-    for_sale = false;
-    available = true;
+    query = {
+      color: selected, size: sizeSel, for_rent: true, for_sale: false, available: true, category: categorySel, price: priceSel,
+    };
   } else if (status === 'sale') {
-    for_rent = false;
-    for_sale = true;
-    available = false;
+    query = {
+      color: selected, size: sizeSel, for_rent: false, for_sale: true, available: false, category: categorySel, price: priceSel,
+    };
   } else if (status === 'both') {
-    for_rent = true;
-    for_sale = true;
-    available = true;
+    query = {
+      color: selected, size: sizeSel, for_rent: true, for_sale: true, available: true, category: categorySel, price: priceSel,
+    };
   } else if (status === 'status') {
     query = {
       color: selected, size: sizeSel, category: categorySel, price: priceSel,
