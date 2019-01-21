@@ -39,14 +39,14 @@
 
 # Files Structure:
   - public
-   -css
+    -css
       - style.css
       - login.css
       - signup.css
       - product.css
       - oneDress.css
       - reset.css
-   -img
+    -img
     
   - src 
     - server.js
