@@ -4,9 +4,6 @@ const exphbs = require('express-handlebars');
 const router = require('./controllers');
 const helpers = require('./views/helpers/helpers.js');
 
-
-// const availableDresses = require('./database/queries/getDresses.js');
-
 const { Dress, } = require('./database/models/');
 
 const app = express();
