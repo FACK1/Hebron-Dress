@@ -13,7 +13,6 @@ exports.get = (req, res) => {
     }, ],
     raw: true,
   }).then((dresses) => {
-    // res.json(dresses);
     res.render('dress', { dresses, css: 'oneDress', });
   });
 };
