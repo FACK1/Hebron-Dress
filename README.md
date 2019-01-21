@@ -40,15 +40,10 @@
 # Files Structure:
   - public 
      - style.css 
-    
      -login.css
-    
      -signup.css
-    
      -product.css
-    
      -oneDress.css
-    
      -reset.css
     
   - src 
