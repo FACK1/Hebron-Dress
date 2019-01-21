@@ -39,12 +39,12 @@
 
 # Files Structure:
   - public 
-      - home.js
-      - search.js
-      - errors.js
-      - signup.js
-      - login.js
-      - add.js
+      - style.css
+      - login.css
+      - signup.css
+      - product.css
+      - oneDress.css
+      - reset.css
     
   - src 
     - server.js
