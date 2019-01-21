@@ -7,7 +7,9 @@
     "test": "tape ./test/*",
     "dev": "nodemon ./src/server.js -e js,hbs",
     "css:build": "sass ./public/sass/style.scss ./public/css/style.css",
-    "css:watch": "sass --watch ./public/sass/style.scss ./public/css/style.css",
+    "css:watch": "sass --watch ./public/sass/sass/style.scss ./public/css/style.css",
+    "css:watchp": "sass --watch ./public/sass/product.scss ./public/css/product.css",
+    "css:watchp": "sass --watch ./public/sass/profile.scss ./public/css/profile.css",
     "start": " node ./src/server.js"
   },
   "repository": {

@@ -1,0 +1,138 @@
+
+$deeppink:#ECDBCD;
+$fontfamily:OpenSans;
+$deep:#774D47;
+
+.header{
+  width: 100%;
+  .header-logo{
+    background: $deeppink;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+
+  }
+  #image{
+    color: $deeppink;
+    width: 40px;
+    height: 50px;
+    margin-top: 6px;
+     }
+  #h3{
+    font-family: 'Great Vibes', cursive;
+    font-size: 26pt;
+    color:$deep;
+    margin-left: 3px;
+    margin-top: 20px;
+    font-style: normal;
+  }
+  #btnlog{
+    font-size: 12pt;
+    background-color:$deep;
+    color:$deeppink;
+    border-radius: 20px;
+    width:60px;
+    height:30px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left:98px;
+    margin-top: 18px;
+    text-align: center;
+  }
+  .nav-bar{
+    background: white;
+    border-style: double;
+    height: 45px;
+    border: solid;
+    border-color: $deep;
+
+
+    ul{
+      width: 100%;
+      list-style-type: none;
+      font-size: 15pt;
+      margin-top: 4px;
+
+    }
+    li{
+      float: left;
+      padding: 12px;
+      list-style-type: none;
+
+
+    }
+    a{
+        color:$deep;
+        text-decoration: none;
+        padding:2px;
+        display: block;
+        text-align: center;
+    }
+  }
+}
+.dresses{
+
+  .h2{
+
+    font-size: 26pt;
+    color:$deep;
+    margin-top:20px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 2rem;
+}
+}
+.div-father{
+
+width: 90%;
+height:auto;
+margin-left: 5%;
+border-style: double;
+border: solid;
+border-color: white;
+
+.div-father .div-child1 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 13rem;
+  width: 98%;
+  border-style: double;
+  border: solid;
+  border-color: #774d47;
+  margin-top: 11px;
+  color: $deep;
+  .div-father .div-child1 .div-child10 {
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    color: $deep;
+    .div-father .div-child1 .div-child10 .imge {
+      flex-direction: column;
+      display: inline-block;
+      height: 10rem;
+      width: 130px;
+      border-style: double;
+      border: solid;
+      border-color: #b7a8a6;
+      margin-top: 17px;
+      margin-left: 30px;
+      margin-bottom: 8px;
+          color: $deep;
+    }
+
+  }
+  .div-father .div-child1 .child11 {
+    flex-direction: column;
+    display: inline-block;
+    height: 10rem;
+    width: 130px;
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-bottom: 8px;
+        color: $deep;
+  }
+
+}
+
+
+
+
+}
