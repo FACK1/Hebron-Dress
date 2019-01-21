@@ -93,8 +93,8 @@
         
     - tests
       - test.js
-  - .gitignore
-  - package.json
+ - .gitignore
+ - package.json
 
 
 # Team Member:
