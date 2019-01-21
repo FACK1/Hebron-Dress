@@ -9,7 +9,6 @@ exports.get = (req, res, next) => {
   const {
     color, size, status, category, price,
   } = req.query;
-  console.log(price);
   let selected = color;
   let sizeSel = size;
   let for_rent; let for_sale;
@@ -19,16 +18,9 @@ exports.get = (req, res, next) => {
   let query = {};
 
 
-  if (color === 'color') {
-    selected = { $like: '%%', };
-  }
-  if (size === 'size') {
-    sizeSel = { $like: '%%', };
-  }
-
-  if (category === 'category') {
-    categorySel = { $like: '%%', };
-  }
+  selected = color === 'color' ? { $like: '%%', } : color;
+  sizeSel = size === 'size' ? { $like: '%%', } : size;
+  categorySel = category === 'category' ? { $like: '%%', } : category;
 
   const min = price.split('-')[0];
   const max = price.split('-')[1];
@@ -44,18 +36,15 @@ exports.get = (req, res, next) => {
     for_rent = true;
     for_sale = false;
     available = true;
-  }
-  if (status === 'sale') {
+  } else if (status === 'sale') {
     for_rent = false;
     for_sale = true;
     available = false;
-  }
-  if (status === 'both') {
+  } else if (status === 'both') {
     for_rent = true;
     for_sale = true;
     available = true;
-  }
-  if (status === 'status') {
+  } else if (status === 'status') {
     query = {
       color: selected, size: sizeSel, category: categorySel, price: priceSel,
     };
