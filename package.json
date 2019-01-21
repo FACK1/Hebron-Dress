@@ -6,8 +6,8 @@
   "scripts": {
     "test": "tape ./test/*",
     "dev": "nodemon ./src/server.js -e js,hbs",
-    "css:build": "sass ./public/sass/style.scss ./public/css/style.css",
-    "css:watch": "sass --watch ./public/sass/style.scss ./public/css/style.css",
+    "css:build": "sass ./public/sass/*.scss ./public/css/*.css",
+    "css:watch": "sass --watch ./public/sass/*.scss ./public/css/*.css",
     "start": " node ./src/server.js"
   },
   "repository": {
@@ -28,6 +28,7 @@
     "tape": "^4.9.2"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "cookie": "^0.3.1",
     "env2": "^2.2.2",
     "express": "^4.16.4",
@@ -35,6 +36,7 @@
     "jsonwebtoken": "^8.4.0",
     "pg": "^7.8.0",
     "pg-hstore": "^2.3.2",
+    "sass": "^1.16.1",
     "sequelize": "^4.42.0"
   }
 }

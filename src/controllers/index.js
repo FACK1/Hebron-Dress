@@ -1,15 +1,24 @@
 const express = require('express');
 const error = require('./error');
 const home = require('./home');
-const profile = require('./profile');
-const add = require('./add');
+const profiles = require('./profile');
+const signups = require('./signup');
+const logins = require('./login');
+const logouts = require('./logout');
+
 
 
 const router = express.Router();
 
 router.get('/', home.get);
-router.get('/profile', profile.get);
-router.post('/add', add.post);
+router.get('/profiles', profiles.get);
+router.get('/signups', signups.get);
+router.post('/signups', signups.post);
+router.get('/logins', logins.get);
+router.post('/logins', logins.post);
+router.get('/logouts', logouts.get);
+
+
 
 router.use(error.pageNotFound);
 router.use(error.serverError);

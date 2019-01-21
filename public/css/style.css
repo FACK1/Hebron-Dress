@@ -31,6 +31,7 @@
   font-family: "Open Sans", sans-serif;
   margin-left: 98px;
   margin-top: 18px;
+  text-align: center;
 }
 .header .nav-bar {
   background: white;
@@ -47,7 +48,7 @@
 }
 .header .nav-bar li {
   float: left;
-  padding: 8px;
+  padding: 12px;
   list-style-type: none;
 }
 .header .nav-bar a {
@@ -314,7 +315,7 @@ body {
   font-size: 18px;
   color: #774D47;
   text-align: center;
-  margin-top: 2px;
+  margin-top: 4px;
 }
 .div-img .div2 .imge {
   width: 50px;
@@ -324,5 +325,3 @@ body {
   margin-top: 15px;
   margin-left: 10px;
 }
-
-/*# sourceMappingURL=style.css.map */
