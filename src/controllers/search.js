@@ -17,13 +17,27 @@ exports.get = (req, res, next) => {
   let categorySel = category;
   let priceSel = price;
   let query = {};
+
+
   if (color === 'color') {
     selected = { $like: '%%', };
-  } if (size === 'size') {
+  }
+  if (size === 'size') {
     sizeSel = { $like: '%%', };
   }
+
   if (category === 'category') {
     categorySel = { $like: '%%', };
+  }
+
+  const min = price.split('-')[0];
+  const max = price.split('-')[1];
+  if (max < 1000) {
+    priceSel = { [Op.between]: [min, max,], };
+  } else if (price === 'price') {
+    priceSel = { [Op.gte]: 0, };
+  } else {
+    priceSel = { [Op.gte]: 1000, };
   }
 
   if (status === 'rent') {
@@ -41,20 +55,6 @@ exports.get = (req, res, next) => {
     for_sale = true;
     available = true;
   }
-
-
-  const min = price.split('-')[0];
-  const max = price.split('-')[1];
-
-  if (max < 1000) {
-    priceSel = { [Op.between]: [min, max,], };
-  } else if (price === 'price') {
-    priceSel = { [Op.gte]: 0, };
-  } else {
-    priceSel = { [Op.gte]: 1000, };
-  }
-
-
   if (status === 'status') {
     query = {
       color: selected, size: sizeSel, category: categorySel, price: priceSel,
