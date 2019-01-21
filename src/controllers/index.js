@@ -6,17 +6,16 @@ const signups = require('./signup');
 const logins = require('./login');
 const logouts = require('./logout');
 const products = require('./products');
-
-
-
+const validate = require('../validation/validate.js');
+const { signupValidation,loginValidation} = require('../validation/server-side');
+const cookiesValidator = require('../validation/cookieValidator.js');
 const router = express.Router();
-
 router.get('/', home.get);
-router.get('/profiles', profiles.get);
+router.get('/profiles', cookiesValidator,profiles.get);
 router.get('/signups', signups.get);
-router.post('/signups', signups.post);
+router.post('/signups',validate(signupValidation),signups.post);
 router.get('/logins', logins.get);
-router.post('/logins', logins.post);
+router.post('/logins',  validate(loginValidation),logins.post);
 router.get('/logouts', logouts.get);
 router.get('/products', products.get);
 

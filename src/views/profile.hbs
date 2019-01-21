@@ -2,7 +2,7 @@
    <div class= "header-logo">
       <img id="image" src="img/Rectangle 7.1.png" alt="logo">
       <h3 id="h3"><b>HebronDress</b></h3>
-      <a href="/logouts">logout</a>
+      <a id="logout" href="/logouts">logout</a>
    </div>
    <div class= "nav-bar">
       <ul>
@@ -15,38 +15,39 @@
 </header>
 <div class="member-profile">
    <div class="bio1">
-      <img src="img/r.png" alt="photo">
-      <h3  id="profileHeader">{{name}} </h3>
+      <img src="img/r.png" alt="photo" width="20px" height="20px">
+      <h3  id="profileHeader"> shaima{{name}} </h3>
    </div>
    <div class="bio2">
-      <img src="img/message.png" alt="message"
-      <h3 id="email"> {{email}} </h3>
-      <img src="img/phone.png" alt="mobile"
-      <h3  id="mobile"> {{mobile}} </h3>
+      <img src="img/message.png" alt="message"width="20px" height="20px"/>
+      <h3 id="email">shaima {{email}} </h3>
+      <img src="img/phone.png" alt="mobile"width="20px" height="20px"/>
+      <h3  id="mobile"> shaima{{mobile}} </h3>
    </div>
    <hr>
    <div class="product">
       <h3 id="yourproducts"> <b>Your Products</b></h3>
-      <form class="addForm" action="/add" method="POST">
-         <input class="inputButtons" id="addBtn" type="submit" name="" value="Add">
-      </form>
+      <a class="addForm" href="/add">add</a>
+
    </div>
    <div class="list">
       <div class="photo1">
-         <img src= {{img}} class="imge">
+         <img  src= {{img}} class="imge">
+         <hr>
          <h6 id="name">name:{{ name}}</h6>
          <h6 id="color">color:{{Color}}</h6>
          <h6 id="size"> size:{{Size}}</h6>
          <h6 id="price"> price:{{Price}} </h6>
-         <hr>
+
       </div>
       <div class="photo2">
-         <img src= {{img}} class="imge">
+         <img src= {{img}} class="image">
+         <hr>
          <h6 id="name">name:{{ name}}</h6>
          <h6 id="color">color:{{Color}}</h6>
          <h6 id="size"> size:{{Size}}</h6>
          <h6 id="price"> price:{{Price}} </h6>
-         <hr>
+
       </div>
    </div>
 </div>
