@@ -39,17 +39,17 @@
 
 # Files Structure:
   - public 
-    - style.css 
+     - style.css 
     
-    -login.css
+     -login.css
     
-    -signup.css
+     -signup.css
     
-    -product.css
+     -product.css
     
-    -oneDress.css
+     -oneDress.css
     
-    -reset.css
+     -reset.css
     
   - src 
     - server.js
