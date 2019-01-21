@@ -9,16 +9,13 @@ exports.get = (req, res, next) => {
   const {
     color, size, status, category, price,
   } = req.query;
-  let selected = color;
-  let sizeSel = size;
-  let categorySel = category;
-  let priceSel = price;
   let query = {};
+  let priceSel = price;
 
 
-  selected = color === 'color' ? { $like: '%%', } : color;
-  sizeSel = size === 'size' ? { $like: '%%', } : size;
-  categorySel = category === 'category' ? { $like: '%%', } : category;
+  const selected = color === 'color' ? { $like: '%%', } : color;
+  const sizeSel = size === 'size' ? { $like: '%%', } : size;
+  const categorySel = category === 'category' ? { $like: '%%', } : category;
 
   const min = price.split('-')[0];
   const max = price.split('-')[1];
