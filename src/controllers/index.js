@@ -5,6 +5,7 @@ const profiles = require('./profile');
 const signups = require('./signup');
 const logins = require('./login');
 const logouts = require('./logout');
+const products = require('./products');
 
 
 
@@ -17,6 +18,7 @@ router.post('/signups', signups.post);
 router.get('/logins', logins.get);
 router.post('/logins', logins.post);
 router.get('/logouts', logouts.get);
+router.get('/products', products.get);
 
 
 
