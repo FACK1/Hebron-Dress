@@ -38,13 +38,15 @@
 
 
 # Files Structure:
-  - public 
+  - public
+   -css
       - style.css
       - login.css
       - signup.css
       - product.css
       - oneDress.css
       - reset.css
+   -img
     
   - src 
     - server.js
