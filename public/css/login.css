@@ -129,3 +129,18 @@
     margin-top: 5px;
 
   }
+  .outerContainer .home-login #msgSuccess
+  {
+    font-size: 15pt;
+    text-align: center;
+    margin: 2px;
+    color: green;
+  }
+
+  .outerContainer .home-login #msgError
+  {
+    font-size: 15pt;
+    text-align: center;
+    margin: 2px;
+    color: red;
+  }

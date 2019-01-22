@@ -68,6 +68,27 @@
   margin-top:25px;
   margin-left: 5px;
 }
+.outerContainer .inputsContainer #emailMsg {
+  font-size: 15pt;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  color: red;
+}
+.outerContainer .inputsContainer #passwordMsg {
+  font-size: 15pt;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  color: red;
+}
+.outerContainer .inputsContainer #mobileMsg {
+  font-size: 15pt;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  color: red;
+}
 .outerContainer .inputsContainer .inputs
  {
    font-size: 12pt;
