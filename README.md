@@ -34,8 +34,7 @@
 
 # Database Schema
 
-![db_schema](https://user-images.githubusercontent.com/26909309/51103183-7e48d800-17ea-11e9-9403-26ee6b60b93f.jpg)
-
+![db_schema](https://user-images.githubusercontent.com/26909309/51532112-f432ec00-1e47-11e9-843c-c2fdb5a81237.jpg)
 
 # Files Structure:
   - public
