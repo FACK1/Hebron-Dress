@@ -58,7 +58,8 @@ exports.post = (req, res) => {
 				}, SECRET);
 				res.cookie('logged_in', token, {
 					maxAge: 999999999
-				}).render('profile',{css:'profile'});
+				}),
+			 res.redirect('/profiles');
 
 			}
 		});
