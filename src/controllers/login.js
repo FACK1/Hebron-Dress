@@ -10,7 +10,7 @@ const {
 } = process.env;
 
 exports.get = (req, res) => {
-  res.render('login', { css: 'login', });
+  res.render('login', { css: 'login', login_page: true, });
 };
 
 
@@ -27,6 +27,7 @@ exports.post = (req, res) => {
       res.render('login', {
         css: 'login',
         messageLogin: 'User not exists',
+        login_page: true,
       });
       return;
     }
@@ -38,6 +39,7 @@ exports.post = (req, res) => {
         res.render('login', {
           css: 'login',
           messageLogin: 'User not exists',
+          login_page: true,
         });
       }
       if (result2) {

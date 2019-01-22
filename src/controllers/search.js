@@ -11,7 +11,6 @@ exports.get = (req, res, next) => {
   } = req.query;
   let query = {};
   let priceSel = price;
-  console.log(status);
 
   const selected = color === 'color' ? { $like: '%%', } : color;
   const sizeSel = size === 'size' ? { $like: '%%', } : size;

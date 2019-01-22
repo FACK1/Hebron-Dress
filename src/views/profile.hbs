@@ -9,20 +9,20 @@
          <li><a href="#">Home</a></li>
          <li><a href="#">Dresses</a></li>
          <li><a href="#">Contact</a></li>
-         <li><a href="#">MyProfile</a></li>
+         <li><a href="#">My Profile</a></li>
       </ul>
    </div>
 </header>
 <div class="member-profile">
    <div class="bio1">
       <img src="img/r.png" alt="photo" width="20px" height="30px">
-      <h3  id="profileHeader"> {{name}} </h3>
+      <h3  id="profileHeader"> {{user.name}} </h3>
    </div>
    <div class="bio2">
       <img src="img/message.png" alt="message"width="20px" height="30px"/>
-      <h3 id="email"> {{email}} </h3>
+      <h3 id="email"> {{user.email}} </h3>
       <img src="img/phone.png" alt="mobile"width="20px" height="30px"/>
-      <h3  id="mobile"> {{mobile}} </h3>
+      <h3  id="mobile"> {{user.mobile}} </h3>
    </div>
    <hr>
    <div class="product">
@@ -30,24 +30,14 @@
       <a class="addForm" href="/add">add</a>
 
    </div>
+   {{#each dresses}}
    <div class="list">
-      <div class="photo1">
          <img  src= {{img}} class="imge">
          <hr>
-         <h6 id="name">name:{{ name}}</h6>
-         <h6 id="color">color:{{Color}}</h6>
-         <h6 id="size"> size:{{Size}}</h6>
-         <h6 id="price"> price:{{Price}} </h6>
-
-      </div>
-      <div class="photo2">
-         <img src= {{img}} class="image">
-         <hr>
-         <h6 id="name">name:{{ name}}</h6>
-         <h6 id="color">color:{{Color}}</h6>
-         <h6 id="size"> size:{{Size}}</h6>
-         <h6 id="price"> price:{{Price}} </h6>
-
-      </div>
+         <h6 id="category">category:{{category}}</h6>
+         <h6 id="color">color:{{color}}</h6>
+         <h6 id="size"> size:{{size}}</h6>
+         <h6 id="price"> price:{{price}} </h6>
    </div>
+   {{/each}}
 </div>

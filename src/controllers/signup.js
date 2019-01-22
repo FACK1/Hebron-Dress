@@ -11,6 +11,7 @@ exports.get = (req, res, next) => {
         dresses,
         result: 'result',
         css: 'signup',
+        login_page: true,
       });
     })
     .catch((err) => {
@@ -36,6 +37,7 @@ exports.post = (req, res) => {
       res.render('signup', {
         css: 'signup',
         message: 'email exsit',
+        login_page: true,
       });
       return;
     }
@@ -44,6 +46,7 @@ exports.post = (req, res) => {
       res.render('signup', {
         css: 'signup',
         messagemobile: 'your mobile is not correct',
+        login_page: true,
       });
       return;
     }
@@ -52,6 +55,7 @@ exports.post = (req, res) => {
       res.render('signup', {
         css: 'signup',
         messagePassword: 'password & confirm password not match',
+        login_page: true,
       });
       return;
     }
@@ -68,6 +72,7 @@ exports.post = (req, res) => {
           res.render('login', {
             css: 'login',
             messageSuccess: 'Succesfuly register',
+            login_page: true,
 
           });
         }).catch((err) => {

@@ -21,18 +21,6 @@
   margin-top: 20px;
   font-style: normal;
 }
-.header #logout {
-  font-size: 12pt;
-  background-color: #774D47;
-  color: #ECDBCD;
-  border-radius: 20px;
-  width: 60px;
-  height: 30px;
-  font-family: "Open Sans", sans-serif;
-  margin-left: 98px;
-  margin-top: 18px;
-  text-align: center;
-}
 .header .nav-bar {
   background: white;
   border-style: double;
