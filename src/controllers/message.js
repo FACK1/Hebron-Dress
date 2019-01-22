@@ -25,9 +25,9 @@ exports.post = (req, res) => {
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.log(error);
-      res.render('contact', { message: 'not  send message', css: 'contact', });
+      res.render('contact', { message: 'Sending Message Failed', css: 'contact', });
     } else {
-      res.render('contact', { message: 'Succesfuly send message', css: 'contact', });
+      res.render('contact', { message: 'Message Sent Succesfuly', css: 'contact', });
     }
   });
 };
