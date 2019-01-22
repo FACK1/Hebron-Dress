@@ -98,15 +98,15 @@
  
   ### How to run our site on your machine?
 
-1.  Clone this repo (git@github.com:FACK1/HebronDress.git)
+-  Clone this repo (git@github.com:FACK1/HebronDress.git)
 
-2.  Open your command line.
+-   Open your command line.
 
-3.  Put in terminal : **npm install**.
+-   Put in terminal : **npm install**.
  
-4.  Then put in terminal : **npm run dev** to run the server.
+-   Then put in terminal : **npm run dev** to run the server.
 
-5.  Open your browser and put in terminal: **localhost:3000**.
+-   Open your browser and put in terminal: **localhost:3000**.
 
 
 # Team Member:
