@@ -117,3 +117,23 @@
   margin-bottom: 8px;
     color: black;
 }
+@media only screen and (min-width: 961px) {
+  .header {
+    width: auto;
+
+  }
+  .header .header-logo {
+    justify-content: space-between;
+  }
+  .header .nav-bar li {
+    margin-right: 50px;
+  }
+  .div-father {
+  margin-left: 25%;
+  }
+  .div-father .div-child1 {
+    justify-content: center;
+    width: 40%;
+
+  }
+}
