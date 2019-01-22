@@ -95,6 +95,28 @@
       - test.js
  - .gitignore
  - package.json
+ 
+  ### How to run our site on your machine?
+
+1- Clone this repo (git@github.com:FACK1/HebronDress.git)
+
+2- Open your command line.
+
+3- Put in terminal : **npm install**.
+ 
+4- Then create database in terminal `CREATE DATABASE  ;` .
+
+5- Then  create user `CREATE USER  with password '';` .
+
+6- Then  put command `GRANT ALL PRIVILEGES ON DATABASE to ;` will grant our had  with all priviliges and rights to use and access the database.
+ 
+7- Go the root directory and create a file **"config.env"**, and put in it `DATABASE_URL=postgres://lvohshdlpneeiv:0fd702acbd1e1870117a5afe6abb915ebc3d3c5e6f25b104a7338f0e7f3e9dbb@ec2-54-225-227-125.compute-1.amazonaws.com:5432/d1tmpt2836jsce` and `SECRET=kmdcddcesdsdsgfvsgswbssvbhs`.
+
+8- Then put in terminal : **node src/database/** to build the database.
+
+9- Then put in terminal : **npm run dev** to run the server.
+
+10- Open your browser and put in terminal: **localhost:3000**.
 
 
 # Team Member:
