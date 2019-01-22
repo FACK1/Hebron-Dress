@@ -38,42 +38,75 @@
 
 
 # Files Structure:
-  - public 
-    - style.css 
+  - public
+  - css
+      - style.css
+      - login.css
+      - signup.css
+      - product.css
+      - oneDress.css
+      - reset.css
+  - img
+ 
+    
   - src 
     - server.js
     - app.js
     - controllers
       - home.js
       - search.js
-      - errors.js
+      - error.js
       - signup.js
       - login.js
       - add.js
+      - index.js
+      - logout.js
+      - product.js
+      - oneDress.js
     - views
+      - helpers
+        - helper.hbs
       - layouts
         - main.hbs
       - partials
         - header.hbs
-        - footer.hbs
       - home.hbs
       - signup.hbs
       - login.hbs
-      - errors.hbs
+      - error.hbs
       - profile.hbs
-      - search.hbs
+      - add.hbs
+      - dress.hbs
+      - product.hbs
+      - dress.hbs
+      - error_404.hbs
     - database
-      - db_build.sql
-      - db_build.js
-      - db_connection.s
-     - queries
-        - getData.js
-        - postData.js
+     - models
+        - dress.js
         - user.js
+        - sequalize.js
+        - index.js
+    - validation
+        - cookieValidator.js
+        - validate.js
+        - server-side.js
+        
     - tests
       - test.js
-  - .gitignore
-  - package.json
+ - .gitignore
+ - package.json
+ 
+  ### How to run our site on your machine?
+
+1.  Clone this repo (git@github.com:FACK1/HebronDress.git)
+
+2.  Open your command line.
+
+3.  Put in terminal : **npm install**.
+ 
+4.  Then put in terminal : **npm run dev** to run the server.
+
+5.  Open your browser and put in terminal: **localhost:3000**.
 
 
 # Team Member:
