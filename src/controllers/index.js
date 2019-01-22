@@ -9,6 +9,9 @@ const products = require('./products');
 const validate = require('../validation/validate.js');
 const { signupValidation,loginValidation} = require('../validation/server-side');
 const cookiesValidator = require('../validation/cookieValidator.js');
+const oneDress = require('./oneDress');
+const products = require('./products');
+const search = require('./search');
 const router = express.Router();
 router.get('/', home.get);
 router.get('/profiles', cookiesValidator,profiles.get);
@@ -18,6 +21,8 @@ router.get('/logins', logins.get);
 router.post('/logins',  validate(loginValidation),logins.post);
 router.get('/logouts', logouts.get);
 router.get('/products', products.get);
+router.get('/search', search.get);
+router.get('/oneDress/:id', oneDress.get);
 
 
 

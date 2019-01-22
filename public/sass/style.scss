@@ -1,329 +1,373 @@
 $deeppink:#ECDBCD;
-$fontfamily:'Open Sans', sans-serif;
+$fontfamily:OpenSans;
 $deep:#774D47;
-.header {
-	width: 100%;
-	.header-logo {
-		background: $deeppink;
-		display: flex;
-		flex-direction: row;
-		height: 70px;
-	}
-	#image {
-		color: $deeppink;
-		width: 40px;
-		height: 50px;
-		margin-top: 6px;
-	}
-	#h3 {
-		font-family: 'Great Vibes', cursive;
-		font-size: 26pt;
-		color: $deep;
-		margin-left: 3px;
-		margin-top: 20px;
-		font-style: normal;
-	}
-	#login {
-		font-size: 12pt;
-		background-color: $deep;
-		color: $deeppink;
-		border-radius: 20px;
-		width: 60px;
-		height: 30px;
-		font-family: $fontfamily;
-		margin-left: 98px;
-		margin-top: 20px;
-		text-align: center;
-	}
-	.nav-bar {
-		background: white;
-		border-style: double;
-		height: 45px;
-		border: solid;
-		border-color: $deep;
-		ul {
-			width: 100%;
-			list-style-type: none;
-			font-size: 15pt;
-			margin-top: 4px;
-		}
-		li {
-			float: left;
-			padding: 12px;
-			list-style-type: none;
-		}
-		a {
-			color: $deep;
-			text-decoration: none;
-			padding: 2px;
-			display: block;
-			text-align: center;
-		}
-	}
-}
-.image-slider {
-	width: 370px;
-	height: 100px;
-	display: block;
+
+.header{
+  width: 100%;
+  .header-logo{
+    background: $deeppink;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+
+  }
+  #image{
+    color: $deeppink;
+    width: 40px;
+    height: 50px;
+    margin-top: 6px;
+     }
+  #h3{
+    font-family: 'Great Vibes', cursive;
+    font-size: 26pt;
+    color:$deep;
+    margin-left: 3px;
+    margin-top: 20px;
+    font-style: normal;
+  }
+  #btnlog{
+    font-size: 12pt;
+    background-color:$deep;
+    color:$deeppink;
+    border-radius: 20px;
+    width:60px;
+    height:30px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left:98px;
+    margin-top: 18px;
+    text-align: center;
+  }
+  .nav-bar{
+    background: white;
+    border-style: double;
+    height: 45px;
+    border: solid;
+    border-color: $deep;
+
+
+    ul{
+      width: 100%;
+      list-style-type: none;
+      font-size: 15pt;
+      margin-top: 4px;
+
+    }
+    li{
+      float: left;
+      padding: 12px;
+      list-style-type: none;
+
+
+    }
+    a{
+        color:$deep;
+        text-decoration: none;
+        padding:2px;
+        display: block;
+        text-align: center;
+    }
+  }
 }
 
-body {
-	width: 100vw;
+.image-slider{
+  width:370px;
+  height: 100px;
+  display: block;
+
+}
+body{
+width: 100vw;
 }
 
-.div-img {
-	width: 100%;
-	margin-top: 150px;
-	display: flex;
-	.div1 {
-		width: 40%;
-		height: 170px;
-		margin-top: 50px;
-		border: solid;
-		border-color: $deep;
-		display: inline-block;
-		#color {
-			background-color: $deep;
-			color: $deeppink;
-			border: solid;
-			border-color: $deep;
-			width: 80%;
-			margin-left: 12px;
-			margin-top: 4px;
-			#color-option {
-				width: 40%;
-				border: solid;
-				border-color: $deep;
-			}
-			#Red {
-				background-color: $deeppink;
-				color: $deep;
-				border: solid;
-				border-color: $deep;
-			}
-			#Yellow {
-				background-color: $deeppink;
-				color: $deep;
-				border: solid;
-				border-color: $deep;
-			}
-			#Green {
-				background-color: $deeppink;
-				color: $deep;
-				border: solid;
-				border-color: $deep;
-			}
-			#Blue {
-				background-color: $deeppink;
-				color: $deep;
-				border: solid;
-				border-color: $deep;
-			}
-			#Black {
-				background-color: $deeppink;
-				color: $deep;
-				border: solid;
-				border-color: $deep;
-			}
-			#White {
-				background-color: $deeppink;
-				color: $deep;
-				border: solid;
-				border-color: $deep;
-			}
-		}
-		#size {
-			background-color: $deep;
-			color: $deeppink;
-			border: solid;
-			border-color: $deep;
-			width: 80%;
-			margin-left: 12px;
-			margin-top: 4px;
-			#size-option {
-				width: 40%;
-				border: solid;
-				border-color: $deep;
-			}
-			#Small {
-				background-color: $deeppink;
-				color: $deep;
-				border: solid;
-				border-color: $deep;
-			}
-			#Medium {
-				background-color: $deeppink;
-				color: $deep;
-				border: solid;
-				border-color: $deep;
-			}
-			#Large {
-				background-color: $deeppink;
-				color: $deep;
-				border: solid;
-				border-color: $deep;
-			}
-			#XLarge {
-				background-color: $deeppink;
-				color: $deep;
-				border: solid;
-				border-color: $deep;
-			}
-		}
-		#status {
-			background-color: $deep;
-			color: $deeppink;
-			border: solid;
-			border-color: $deep;
-			width: 80%;
-			margin-left: 12px;
-			margin-top: 4px;
-			#status-option {
-				width: 40%;
-				border: solid;
-				border-color: $deep;
-			}
-			#Rent {
-				background-color: $deeppink;
-				color: $deep;
-				border: solid;
-				border-color: $deep;
-			}
-			#Buy {
-				background-color: $deeppink;
-				color: $deep;
-				border: solid;
-				border-color: $deep;
-			}
-		}
-		#category {
-			background-color: $deep;
-			color: $deeppink;
-			border: solid;
-			border-color: $deep;
-			width: 80%;
-			margin-left: 12px;
-			margin-top: 4px;
-			#category-option {
-				width: 40%;
-				border: solid;
-				border-color: $deep;
-			}
-			#Bride {
-				background-color: $deeppink;
-				color: $deep;
-				border: solid;
-				border-color: $deep;
-			}
-			#Party {
-				background-color: $deeppink;
-				color: $deep;
-				border: solid;
-				border-color: $deep;
-			}
-			#Folklore {
-				background-color: $deeppink;
-				color: $deep;
-				border: solid;
-				border-color: $deep;
-			}
-		}
-		#price {
-			background-color: $deep;
-			color: $deeppink;
-			border: solid;
-			border-color: $deep;
-			width: 80%;
-			margin-left: 12px;
-			margin-top: 4px;
-			#price-option {
-				width: 40%;
-				border: solid;
-				border-color: $deep;
-			}
-			#price1 {
-				background-color: $deeppink;
-				color: $deep;
-				border: solid;
-				border-color: $deep;
-			}
-			#price2 {
-				background-color: $deeppink;
-				color: $deep;
-				border: solid;
-				border-color: $deep;
-			}
-			#price3 {
-				background-color: $deeppink;
-				color: $deep;
-				border: solid;
-				border-color: $deep;
-			}
-			#price4 {
-				background-color: $deeppink;
-				color: $deep;
-				border: solid;
-				border-color: $deep;
-			}
-			#price5 {
-				background-color: $deeppink;
-				color: $deep;
-				border: solid;
-				border-color: $deep;
-			}
-		}
-		#search {
-			background-color: $deeppink;
-			color: $deep;
-			border: solid;
-			border-color: $deep;
-			width: 70%;
-			margin-left: 18px;
-			margin-top: 4px;
-			text-align: center;
-		}
-	}
-	.div2 {
-		width: 60%;
-		height: 170px;
-		margin-top: 50px;
-		display: inline-block;
-		border: solid;
-		border-color: $deep;
-		#div21 {
-			width: 100%;
-			height: 50%;
-			margin-top: 3px;
-			margin-bottom: 3px;
-		}
-		#div22 {
-			width: 100%;
-			height: 50%;
-			margin-bottom: 5px;
-		}
-		.footer {
-			border: solid;
-			border-color: $deep;
-			width: 170%;
-			height: 65px;
-			background: $deeppink;
-			display: flex;
-			margin-left: -154px;
-			margin-top: -10px;
-			#paragraph {
-				font-size: 18px;
-				color: $deep;
-				text-align: center;
-				margin-top: 4px;
-			}
-		}
-		.imge {
-			width: 50px;
-			height: 50px;
-			border: solid;
-			border-color: $deep;
-			margin-top: 15px;
-			margin-left: 10px;
-		}
-	}
+.div-img{
+width: 100%;
+margin-top: 150px;
+display: flex;
+
+.div1{
+width: 40%;
+height: 170px;
+margin-top: 50px;
+border: solid;
+border-color: $deep;
+display: inline-block;
+
+
+#color{
+  background-color: $deep;
+  color: $deeppink;
+  border: solid;
+  border-color: $deep;
+  width: 80%;
+  margin-left: 12px;
+  margin-top: 4px;
+  #color-option{
+  width: 40%;
+  border: solid;
+  border-color: $deep;
+
+  }
+  #Red{
+    background-color: $deeppink;
+    color: $deep;
+    border: solid;
+    border-color: $deep;
+
+  }
+  #Yellow{
+    background-color: $deeppink;
+    color: $deep;
+    border: solid;
+    border-color: $deep;
+
+  }
+  #Green{
+    background-color: $deeppink;
+    color: $deep;
+    border: solid;
+    border-color: $deep;
+
+  }
+  #Blue{
+    background-color: $deeppink;
+    color: $deep;
+    border: solid;
+    border-color: $deep;
+
+  }
+  #Black{
+    background-color: $deeppink;
+    color: $deep;
+    border: solid;
+    border-color: $deep;
+
+  }
+  #White{
+    background-color: $deeppink;
+    color: $deep;
+    border: solid;
+    border-color: $deep;
+
+  }
+}
+#size{
+  background-color: $deep;
+  color: $deeppink;
+  border: solid;
+  border-color: $deep;
+  width: 80%;
+  margin-left: 12px;
+  margin-top: 4px;
+  #size-option{
+  width: 40%;
+  border: solid;
+  border-color: $deep;
+
+  }
+  #Small{
+    background-color: $deeppink;
+    color: $deep;
+    border: solid;
+    border-color: $deep;
+
+  }
+  #Medium{
+    background-color: $deeppink;
+    color: $deep;
+    border: solid;
+    border-color: $deep;
+
+  }
+  #Large{
+    background-color: $deeppink;
+    color: $deep;
+    border: solid;
+    border-color: $deep;
+
+  }
+  #XLarge{
+    background-color: $deeppink;
+    color: $deep;
+    border: solid;
+    border-color: $deep;
+
+  }
+
+}
+#status{
+  background-color: $deep;
+  color: $deeppink;
+  border: solid;
+  border-color: $deep;
+  width: 80%;
+  margin-left: 12px;
+  margin-top: 4px;
+  #status-option{
+  width: 40%;
+  border: solid;
+  border-color: $deep;
+
+  }
+  #Rent{
+    background-color: $deeppink;
+    color: $deep;
+    border: solid;
+    border-color: $deep;
+
+  }
+  #Buy{
+    background-color: $deeppink;
+    color: $deep;
+    border: solid;
+    border-color: $deep;
+
+  }
+}
+#category{
+  background-color: $deep;
+  color: $deeppink;
+  border: solid;
+  border-color: $deep;
+  width: 80%;
+  margin-left: 12px;
+  margin-top: 4px;
+  #category-option{
+  width: 40%;
+  border: solid;
+  border-color: $deep;
+
+  }
+  #Bride{
+    background-color: $deeppink;
+    color: $deep;
+    border: solid;
+    border-color: $deep;
+
+  }
+
+  #Party{
+    background-color: $deeppink;
+    color: $deep;
+    border: solid;
+    border-color: $deep;
+
+  }
+  #Folklore{
+    background-color: $deeppink;
+    color: $deep;
+    border: solid;
+    border-color: $deep;
+
+  }
+}
+#price{
+  background-color: $deep;
+  color: $deeppink;
+  border: solid;
+  border-color: $deep;
+  width: 80%;
+  margin-left: 12px;
+  margin-top: 4px;
+  #price-option{
+  width: 40%;
+  border: solid;
+  border-color: $deep;
+
+  }
+  #price1{
+    background-color: $deeppink;
+    color: $deep;
+    border: solid;
+    border-color: $deep;
+
+  }
+
+  #price2{
+    background-color: $deeppink;
+    color: $deep;
+    border: solid;
+    border-color: $deep;
+
+  }
+  #price3{
+    background-color: $deeppink;
+    color: $deep;
+    border: solid;
+    border-color: $deep;
+
+  }
+  #price4{
+    background-color: $deeppink;
+    color: $deep;
+    border: solid;
+    border-color: $deep;
+
+  }
+  #price5{
+    background-color: $deeppink;
+    color: $deep;
+    border: solid;
+    border-color: $deep;
+
+  }
+}
+
+#search{
+
+  background-color: $deeppink;
+  color: $deep;
+  border: solid;
+  border-color: $deep;
+  width: 70%;
+  margin-left: 18px;
+  margin-top: 4px;
+ text-align: center;
+}
+}
+.div2{
+  width: 60%;
+  height: 170px;
+  margin-top: 50px;
+  display: inline-block;
+  border:solid;
+  border-color: $deep;
+  #div21{
+    width: 100%;
+    height: 50%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  #div22{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 5px;
+
+  }
+  .footer{
+    border: solid;
+    border-color: $deep;
+    width: 170%;
+    height: 65px;
+    background: $deeppink;
+    display: flex;
+    margin-left: -154px;
+    margin-top: -10px;
+      #paragraph{
+      font-size: 18px;
+      color: $deep;
+      text-align: center;
+      margin-top: 4px;
+    }
+  }
+
+.imge{
+  width: 50px;
+  height: 50px;
+  border: solid;
+  border-color: $deep;
+  margin-top: 15px;
+  margin-left: 10px;
+
+}
+}
 }
