@@ -26,7 +26,7 @@ exports.post = (req, res) => {
     if (!result) {
       res.render('login', {
         css: 'login',
-        messageLogin: 'User not exists',
+        messageEmail: 'User not exists',
         login_page: true,
       });
       return;
@@ -38,7 +38,7 @@ exports.post = (req, res) => {
       if (!result2) {
         res.render('login', {
           css: 'login',
-          messageLogin: 'User not exists',
+          messagePass: 'password invaild',
           login_page: true,
         });
       }

@@ -8,8 +8,6 @@ exports.get = (req, res) => {
   User.findOne({ where: { id: req.id, }, }).then((user) => {
     Dress.findAll({ where: { userId: req.id, }, }).then((dresses) => {
       res.render('profile', { user, dresses, css: 'profile', });
-      console.log(dresses);
-      console.log(user);
     });
   });
 };
