@@ -87,11 +87,10 @@
         - index.js
     - validation
         - cookieValidator.js
-        - validate.js
         - server-side.js
         
     - tests
-      - test.js
+       - test.js
  - .gitignore
  - package.json
  
