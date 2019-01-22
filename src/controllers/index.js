@@ -5,7 +5,6 @@ const profiles = require('./profile');
 const signups = require('./signup');
 const logins = require('./login');
 const logouts = require('./logout');
-const products = require('./products');
 const validate = require('../validation/validate.js');
 const { signupValidation,loginValidation} = require('../validation/server-side');
 const cookiesValidator = require('../validation/cookieValidator.js');
@@ -13,6 +12,10 @@ const oneDress = require('./oneDress');
 const products = require('./products');
 const search = require('./search');
 const router = express.Router();
+
+
+
+
 router.get('/', home.get);
 router.get('/profiles', cookiesValidator,profiles.get);
 router.get('/signups', signups.get);
