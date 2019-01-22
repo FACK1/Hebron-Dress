@@ -23,13 +23,17 @@
   <h2 class="h5"><b>contact form<b></h5><br>
 <form action="/sendmessage" method="POST">
 <div class="inputsContainer">
-<input class="password" type="text" name="name" value=""  >
-<input class="email" type="email" name="email" value="" >
-<input class="massege" type="text" name="message" value="" placeholder="massege">
+<input class="password" type="text" name="name" value=""  required>
+<input class="email" type="email" name="email" value="" required>
+<input class="massege" type="text" name="message" value="" placeholder="massege" required>
 </div>
 <div class="home-login">
 <input class="inputButtons" type="submit" name="" value="send">
 </form>
+
+{{#if message}}
+{{message}}
+{{/if}}
 </div>
 </div>
 
