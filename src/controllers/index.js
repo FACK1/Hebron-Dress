@@ -11,6 +11,7 @@ const products = require('./products');
 const contact = require('./contact');
 const message = require('./message');
 const search = require('./search');
+const add = require('./add');
 
 
 const router = express.Router();
@@ -28,6 +29,8 @@ router.get('/contact', contact.get);
 router.post('/sendmessage', message.post);
 router.get('/search', search.get);
 router.get('/oneDress/:id', oneDress.get);
+router.get('/add', add.get);
+router.post('/add', add.post);
 
 
 router.use(error.pageNotFound);
