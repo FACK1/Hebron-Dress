@@ -14,6 +14,18 @@
   height: 50px;
   margin-top: 6px;
 }
+.header #login {
+  font-size: 12pt;
+  background-color: #774D47;
+  color: #ECDBCD;
+  border-radius: 20px;
+  width: 60px;
+  height: 30px;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 98px;
+  margin-top: 20px;
+  text-align: center;
+}
 .header #h3 {
   font-family: 'Great Vibes', cursive;
   font-size: 26pt;

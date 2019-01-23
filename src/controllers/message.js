@@ -19,12 +19,10 @@ const mailOptions = {
 
 exports.post = (req, res) => {
   const { name, email, message, } = req.body;
-  console.log(req.body);
   mailOptions.text = message;
   mailOptions.subject = `message from ${name}`;
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      console.log(error);
       res.render('contact', { message: 'Sending Message Failed', css: 'contact', });
     } else {
       res.render('contact', { message: 'Message Sent Succesfuly', css: 'contact', });
