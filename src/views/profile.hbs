@@ -33,11 +33,13 @@
    {{#each dresses}}
    <div class="list">
          <img  src= {{img}} class="imge">
-         <hr>
-         <h6 id="category">category:{{category}}</h6>
-         <h6 id="color">color:{{color}}</h6>
-         <h6 id="size"> size:{{size}}</h6>
-         <h6 id="price"> price:{{price}} </h6>
+         <div class="details">
+         <h6 >category:{{category}}</h6>
+         <h6 >color:{{color}}</h6>
+         <h6 > size:{{size}}</h6>
+         <h6  id="price"> price: <span style="color: #ff0000">{{price}}$</span> </h6>
+        
+         <div>
    </div>
    {{/each}}
 </div>
