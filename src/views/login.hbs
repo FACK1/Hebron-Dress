@@ -1,0 +1,18 @@
+{{>header}}
+<div class="outerContainer">
+   <form action="/logins" method="POST">
+      <div class="inputsContainer">
+         <input class="email" type="email" name="email" value="" placeholder="Type your email.." required>
+         <input class="password" type="password" name="password" value="" placeholder="Type a password.." required>
+      </div>
+      <div class="home-login">
+         <input class="inputButtons" type="submit" name="" value="login">
+   </form>
+   {{#if messageEmail}} <h1 id= "msgSuccess"> {{messageEmail}} </h1> {{/if}}
+   {{#if messagePass}} <h1 id = "msgError"> {{messagePass}} </h1> {{/if}}
+   <br>
+   <h2 id="text"> You dont have an account ! </h2>
+   <br>
+   <a id="signup" href="/signups">signup</a>
+   </div>
+</div>

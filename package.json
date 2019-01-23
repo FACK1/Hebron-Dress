@@ -7,8 +7,7 @@
     "test": "tape ./test/*",
     "dev": "nodemon ./src/server.js -e js,hbs",
     "css:build": "sass ./public/sass/style.scss ./public/css/style.css",
-    "css:watch": "sass --watch ./public/sass/sass/style.scss ./public/css/style.css",
-    "css:watchp": "sass --watch ./public/sass/product.scss ./public/css/product.css",
+    "css:watch": "sass --watch ./public/sass/style.scss ./public/css/style.css",
     "css:watchp": "sass --watch ./public/sass/profile.scss ./public/css/profile.css",
     "start": " node ./src/server.js"
   },
@@ -30,12 +29,18 @@
     "tape": "^4.9.2"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie": "^0.3.1",
+    "cookie-parser": "^1.4.3",
     "env2": "^2.2.2",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.4.0",
     "nodemailer": "^5.1.1",
     "pg": "^7.8.0",
     "pg-hstore": "^2.3.2",
+    "sass": "^1.16.1",
     "sequelize": "^4.42.0"
   }
 }

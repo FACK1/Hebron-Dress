@@ -3,11 +3,14 @@ const path = require('path');
 const exphbs = require('express-handlebars');
 const router = require('./controllers');
 const helpers = require('./views/helpers/helpers.js');
+const cookieParser = require('cookie-parser')
+
+
 
 const { Dress, } = require('./database/models/');
 
 const app = express();
-
+app.use(cookieParser());
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');

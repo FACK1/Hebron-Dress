@@ -11,7 +11,6 @@ exports.get = (req, res, next) => {
   } = req.query;
   let query = {};
   let priceSel = price;
-  console.log(status);
 
   const selected = color === 'color' ? { $like: '%%', } : color;
   const sizeSel = size === 'size' ? { $like: '%%', } : size;
@@ -19,7 +18,7 @@ exports.get = (req, res, next) => {
 
   const min = price.split('-')[0];
   const max = price.split('-')[1];
-  if (max < 1000) {
+  if (max <= 1000) {
     priceSel = { [Op.between]: [min, max,], };
   } else if (price === 'price') {
     priceSel = { [Op.gte]: 0, };
