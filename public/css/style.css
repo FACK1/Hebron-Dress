@@ -13,13 +13,17 @@
   height: 50px;
   margin-top: 6px;
 }
-.header #h3 {
-  font-family: "Great Vibes", cursive;
-  font-size: 26pt;
-  color: #774D47;
-  margin-left: 3px;
-  margin-top: 20px;
-  font-style: normal;
+.header #logout {
+  font-size: 12pt;
+  background-color: #774D47;
+  color: #ECDBCD;
+  border-radius: 20px;
+  width: 60px;
+  height: 30px;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 98px;
+  margin-top: 18px;
+  text-align: center;
 }
 .header #login {
   font-size: 12pt;
@@ -32,6 +36,14 @@
   margin-left: 98px;
   margin-top: 20px;
   text-align: center;
+}
+.header #h3 {
+  font-family: "Great Vibes", cursive;
+  font-size: 26pt;
+  color: #774D47;
+  margin-left: 3px;
+  margin-top: 20px;
+  font-style: normal;
 }
 .header .nav-bar {
   background: white;

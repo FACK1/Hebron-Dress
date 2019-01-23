@@ -10,7 +10,7 @@ const {
 } = process.env;
 
 exports.get = (req, res) => {
-  res.render('login', { css: 'login', login_page: true, });
+  res.render('login', { css: 'login', });
 };
 
 

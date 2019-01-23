@@ -1,18 +1,4 @@
-<header class="header">
-   <div class= "header-logo">
-      <img id="image" src="img/Rectangle 7.1.png" alt="logo">
-      <h3 id="h3"><b>HebronDress</b></h3>
-      <a id="logout" href="/logouts">logout</a>
-   </div>
-   <div class= "nav-bar">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/products">Dresses</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="#">MyProfile</a></li>
-      </ul>
-   </div>
-</header>
+{{>header}}
 <div class="member-profile">
    <div class="bio1">
       <img src="img/r.png" alt="photo" width="20px" height="30px">
@@ -38,7 +24,7 @@
          <h6 >color:{{color}}</h6>
          <h6 > size:{{size}}</h6>
          <h6  id="price"> price: <span style="color: #ff0000">{{price}}$</span> </h6>
-        
+
          <div>
    </div>
    {{/each}}
