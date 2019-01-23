@@ -19,13 +19,14 @@ const mailOptions = {
 
 exports.post = (req, res) => {
   const { name, email, message, } = req.body;
+  const logged = !!req.cookies.logged_in;
   mailOptions.text = message;
   mailOptions.subject = `message from ${name}`;
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      res.render('contact', { message: 'Sending Message Failed', css: 'contact', });
+      res.render('contact', { message: 'Sending Message Failed', css: 'contact', logged, });
     } else {
-      res.render('contact', { message: 'Message Sent Succesfuly', css: 'contact', });
+      res.render('contact', { message: 'Message Sent Succesfuly', css: 'contact', logged, });
     }
   });
 };

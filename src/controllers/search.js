@@ -5,7 +5,7 @@ const Op = sequelize.Op;
 
 exports.get = (req, res, next) => {
 // search query
-
+  const logged = !!req.cookies.logged_in;
   const {
     color, size, status, category, price,
   } = req.query;
@@ -40,7 +40,7 @@ exports.get = (req, res, next) => {
     };
   }
   Dress.findAll({ where: query, }).then((dresses) => {
-    res.render('product', { dresses, css: 'product', });
+    res.render('product', { dresses, css: 'product', logged, });
   }).catch((error) => {
     next(error);
   });

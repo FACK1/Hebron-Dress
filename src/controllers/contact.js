@@ -1,4 +1,5 @@
 
 exports.get = (req, res, next) => {
-  res.render('contact', { css: 'contact', });
+  const logged = !!req.cookies.logged_in;
+  res.render('contact', { css: 'contact', logged, });
 };
