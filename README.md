@@ -105,7 +105,7 @@
  
 -   Then put in terminal : **npm run dev** to run the server.
 
--   Open your browser and put in terminal: **localhost:3000**.
+-   Open your browser and put in terminal: **localhost:3004**.
 
 
 # Team Member:
